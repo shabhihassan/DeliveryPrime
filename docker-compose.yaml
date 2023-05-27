@@ -25,6 +25,11 @@ services:
    build:
       context: .
       dockerfile: dockerfiles/mysql.dockerfile
+  volumes:
+    - ./mysql:/var/lib/mysql
+    - ${PWD}/dockerfiles/dump.sql:/docker-entrypoint-initdb.d/start.sql
+
+
   composer:
     build:
       context: ./dockerfiles

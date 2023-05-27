@@ -6,7 +6,7 @@ USER laravel
 
 WORKDIR /var/www/html
 
-RUN chmod -R 777 /storage 
+#RUN chmod -R 777 /storage 
 ARG COMPOSE_HTTP_TIMEOUT=900
 
 ENTRYPOINT [ "composer" ]
