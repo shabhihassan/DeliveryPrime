@@ -1,7 +1,7 @@
 FROM mysql:5.7
 
 # Copy the database dump file to the container
-COPY dump.sql /docker-entrypoint-initdb.d/
+#COPY dump.sql /docker-entrypoint-initdb.d/
 
 
 
